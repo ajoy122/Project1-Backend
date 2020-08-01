@@ -1,0 +1,10 @@
+{
+  "name": "Project1-Backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ajoy122/Project1-Backend.git",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
