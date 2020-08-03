@@ -36,7 +36,7 @@ router.post('/user', (request,response) =>{
 // return list of all users
 router.get('/users', (request,response) =>{
     const connection = getNewConnection()
-    const queryString = 'select * from `users_signup'
+    const queryString = 'select * from users_signup'
     // console.log(queryString)
     connection.query(queryString, (err, rows, fields) => {
         console.log('Got Response from Database Server')
