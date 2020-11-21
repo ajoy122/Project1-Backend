@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/login.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body >
+<!-- 	Navigation menu bar -->
+<header>
+	<div class="container">
+	<div class="logo">
+		  <img src="./images/logo.png" alt="logo" width="180" height="100">
+	</div>
+	
+		 <button class="button" onclick="window.location.href='contactus.html'">Contact Us</button>
+		  <button class="button" onclick="window.location.href='login.html'">Login</button>
+		  <button class="button" onclick="window.location.href='signup.html'">Sign Up</button>
+	
+	</div>
+			
+	<div class="menubar">
+			<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="aboutus.html">About Us</a></li>
+				  <li><a href="menu.html">Menu</a></li>
+				  <li><a href="order.html">Order</a></li>
+				  <li><a href="reservation.html">Make a reservation</a></li>
+				   <li><a href="feedback.html">Feedback</a></li>
+		
+			   </ul>
+			
+	</div>
+</header>
+
+<!-- Navigation menu bar -->
+<div style="background-image: url('./images/bg.png'); height: 700px; width: 1251px; background-repeat: no-repeat;">
+<br>
+<div id="midlogin">
+	  <form action="/signup/login" method="POST">
+	  		<center>
+	  			<div class="imgcontainer">
+          		 <img src="./images/login.png" alt="Avatar" width="200px" height="200px" >
+    		</div>
+	  		</center>
+    		
+
+    		<div >
+			      <label><b>Username</b></label>
+			        <input type="text" placeholder="Enter Username" name="username" id="username" required>
+			      <br>
+
+			      <label><b>Password</b></label>
+			        <input type="password" placeholder="Enter Password" name="password" id="password" required>
+			      <br>
+			      <label>
+			        <input type="checkbox" checked="checked" name="remember"> Remember me
+			      </label>
+			      <br>
+			      <center>
+					  <button class="loginbutton" type="submit" >LOGIN</button>
+					  <button onclick="window.location.href='menu.html'">Menu</button>
+			      </center>
+			      <br>
+			      <div style="float: right;">
+			      	<label style="color: black"><b>Don't have an account ?</b></label>
+			      <button class="button1" type="submit" onclick="window.location.href='signup.html'" >SIGN UP</button>
+					
+			      </div>
+			      
+
+      		</div>
+    </form>
+
+</div>
+<!-- footer -->
+<div class="footer1">
+	<h2 >Follow us on</h2>
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-instagram"></a>
+</div>
+<div class="footer2" style="background-color: grey;">
+	
+</div>
+<!-- footer -->
+
+
+</body>
+</html>

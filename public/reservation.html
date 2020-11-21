@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reservation Page</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="./CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/reservation.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/radio.css">
+	<script src="./jquery.min.js"></script>
+	<script src="./script.js"></script>
+
+</head>
+<body>
+<!-- 	Navigation menu bar -->
+<header>
+	<div class="container">
+	<div class="logo">
+		  <img src="./images/logo.png" alt="logo" width="180" height="100">
+	</div>
+	
+		 <button class="button" onclick="window.location.href='contactus.html'">Contact Us</button>
+		  <button class="button" onclick="window.location.href='login.html'">Login</button>
+		  <button class="button" onclick="window.location.href='signup.html'">Sign Up</button>
+	
+	</div>
+			
+	<div class="menubar">
+		
+			<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="aboutus.html">About Us</a></li>
+				  <li><a href="menu.html">Menu</a></li>
+				  <li><a href="order.html">Order</a></li>
+				  <li><a href="reservation.html">Make a reservation</a></li>
+				    <li><a href="feedback.html">Feedback</a></li>
+		
+			   </ul>
+			
+	</div>
+</header>
+
+<!-- Navigation menu bar -->
+
+<br>
+<div class="row">
+  <div class="column">
+   <div id="resev">
+   	<h2>MAKE YOUR RESERVATION</h2>
+ <div id="frm">
+   	   
+   	    <form  action="/reservation" method="post">
+	      		<div >
+			      <label for="name"><b>Name</b></label>
+			        <input type="text" placeholder="Enter your name" id="name" name="name" required>
+			      <br>
+
+			      <label><b>Email</b></label>
+			        <input type="text" placeholder="abc@abc.com" id="email" name="email" required>
+			      <br>
+			      <label><b>People</b></label>
+			        <input type="number" placeholder="Enter number of People" id="people" name="people" required>
+			      <br>
+			      <label><b>Number</b></label>
+			        <input type="text" placeholder="Enter your phone number" id="number" name="number" required>
+			      <br>
+			       <label><b>Date</b></label>
+			        <input type="date" name="date" id="date" required>
+			      <br>
+			       <br>
+
+			       <label><b>Jazz Perfomance</b></label>
+			       <br><br>
+			        <label class="radcontainer">Yes
+					  <input type="radio" checked="checked" name="jazz_perfomance" id="jazz_perfomance">
+					    <span class="checkmark"></span>
+					</label>
+					<br>
+					<br>
+					<label class="radcontainer">No
+					  <input type="radio" name="jazz_perfomance" id="jazz_perfomance">
+					  <span class="checkmark"></span>
+					</label>
+					<br>
+					<br>
+			      <button id="reservationsubmit" class="btn" onclick="msg()">
+			        <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+			          <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+			          <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+			        </svg>
+			        <span>BOOK</span>
+			      </button>
+				  <script type="text/javascript">
+					function msg() {
+						alert("Reservation is confirmed. Confirmation email will be sent to our registered number shortly..");
+						
+			  }
+				  </script>
+      		</div>
+    </form>
+   </div>
+
+   </div>
+  
+   
+  </div>
+  <div class="column" >
+    <div id="open" >
+   	<h2>OPENING TIMES</h2>
+   	<div id="tim">
+   	  
+   	  	<p><strong>MONDAY - FRIDAY</strong></p>
+   	  		
+   	  	<p><strong> 7 AM TO 11 PM</strong></p>
+   	  	<br>
+   		<p><strong>SATURDAY</strong></p>
+		<p><strong> 9 AM TO 2 PM</strong></p>
+		<br>
+		<p><strong>SUNDAY</strong></p>
+		<p><strong> 9 AM TO 12 PM</strong></p>
+   	 
+  </div>
+   </div>
+   
+</div>
+</div>
+
+</body>
+</html>

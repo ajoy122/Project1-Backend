@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+  <link rel="stylesheet" type="text/css" href="./CSS/menuslideshow.css">
+  <link rel="stylesheet" type="text/css" href="./CSS/catmenu.css">
+  <link rel="stylesheet" type="text/css" href="./CSS/menuselection.css">
+  <link rel="stylesheet" type="text/css" href="./CSS/menuorder.css">
+  <script src="./jquery.min.js"></script>
+	<script src="./script.js"></script>
+  <style>
+    select, option {
+      width: 50%;
+      padding: 12px;
+    }
+    
+    option {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+    input[type=number]{
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+    </style>
+</head>
+<body>
+
+<!--  Navigation menu bar -->
+<header>
+  <div class="container">
+  <div class="logo">
+      <img src="./images/logo.png" alt="logo" width="180" height="100">
+  </div>
+  
+      <button class="button" onclick="window.location.href='contactus.html'">Contact Us</button>
+      <button class="button" onclick="window.location.href='login.html'">Login</button>
+      <button class="button" onclick="window.location.href='signup.html'">Sign Up</button>
+  
+  </div>
+      
+  <div class="menubar">
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="order.html">Order</a></li>
+          <li><a href="reservation.html">Make a reservation</a></li>
+           <li><a href="feedback.html">Feedback</a></li>
+    
+         </ul>
+      
+  </div>
+</header>
+
+<!-- Navigation menu bar -->
+
+
+<center>
+  <h1 style="color: green">Welcome</h1>
+<h2 style="color: green">TASTE OF KERALA is a locally owned south Indian cusine in Thunderbay that serves authentic Indian food which brings your food traditional rich in taste</h2>
+</center>
+
+<!-- food menu starts here -->
+<h2>Menu</h2>
+<!-- categories of menu start here -->
+        <div style="float: left;height: 400px; width: 600px">
+          <div class="menu">
+          <a>
+            <img src="./images/catagory dishes/drinks.jpg" width="200" height="100">
+          </a>
+          <div class="desc">Drinks</div>
+        </div>
+
+        <div class="menu">
+          <a>
+            <img src="./images/catagory dishes/snacks.png" width="200" height="100">
+          </a>
+          <div class="desc">Snacks</div>
+        </div>
+        <br>  
+        <div class="menu">
+          <a>
+            <img src="./images/catagory dishes/staters non.PNG" width="200" height="100">
+          </a>
+          <div class="desc">Non Starters</div>
+        </div>
+        <br>
+        <div class="menu">
+          <a>
+            <img src="./images/catagory dishes/staters.PNG" width="200" height="100">
+          </a>
+          <div class="desc">Veg Starters </div>
+        </div>
+        </div>
+
+
+<!-- categories of menu end here -->
+<br>
+        <!-- image slide show start here -->
+        <div style="float: right; background-color: red; height: 200px; width: 550px;">
+          <h2 style="text-align:center">Gallery</h2>
+
+            <div class="container">
+              <div class="mySlides">
+                <div class="numbertext">1 / 6</div>
+                <img src="./images/gallery/g1.jpg" style="height: 200px; width: 550px;">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="./images/gallery/g2.jpg" style="height: 200px; width: 550px;">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="./images/gallery/g3.jpg" style="height: 200px; width: 550px;">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="./images/gallery/g4.jpg" style="height: 200px; width: 550px;">
+              </div>
+
+              <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="./images/gallery/g5.jpg" style="height: 200px; width: 550px;">
+              </div>
+                
+              <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="./images/scroll-img1.jpg" style="height: 200px; width: 550px;">
+              </div>
+                
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <div class="row">
+                <div class="column">
+                  <img class="demo cursor" src="./images/gallery/g1.jpg" style="height: 100px; width: 100px;" onclick="currentSlide(1)" alt="Chicken Fry">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./images/gallery/g2.jpg" style="height: 100px; width: 100px;" onclick="currentSlide(2)" alt="Chilli Beef">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./images/gallery/g3.jpg" style="height: 100px; width: 100px" onclick="currentSlide(3)" alt="Chicken curry">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./images/gallery/g4.jpg" style="height: 100px; width: 100px" onclick="currentSlide(4)" alt="Puttu">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="./images/gallery/g5.jpg" style="height: 100px; width: 100px" onclick="currentSlide(5)" alt="Chapathi and curry">
+                </div>    
+                <div class="column">
+                  <img class="demo cursor" src="/images/scroll-img1.jpg" style="height: 100px; width: 100px" onclick="currentSlide(6)" alt="menu">
+                </div>
+                         </div>
+            
+            <script src="./menuslideshow.js"></script>
+             </div>
+        </div>
+        <!-- image slide show start here -->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+         <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+      <!--  menu selection start here -->
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1> Our Menu</h1>
+<hr>
+
+<h2>Dishes</h2>
+
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  <button class="btn" onclick="filterSelection('drinks')">Drinks</button>
+  <button class="btn" onclick="filterSelection('snacks')"> Snacks</button>
+  <button class="btn" onclick="filterSelection(' vstarters')"> Veg Starters</button>
+  <button class="btn" onclick="filterSelection('nonvstarters')"> NonVeg Starters</button>
+</div>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+        <div class="column drinks">
+                      <div class="content">
+                        <img src="./images/catagory dishes/Juice/1.jpg" alt="Orange" style="width:300px;height:200px;">
+                        <h4>Orange Juice - $8/-</h4>
+                      
+                      </div>
+          </div>
+          <div class="column drinks">
+            <div class="content">
+            <img src="./images/catagory dishes/Juice/2.jpg" alt="Lime" style="width:300px;height:200px;">
+              <h4>Lime Juice - $8/-</h4>
+               
+            </div>
+          </div>
+          <div class="column drinks">
+            <div class="content">
+            <img src="./images/catagory dishes/Juice/3.jpg" alt="watermelon" style="width:300px;height:200px;">
+              <h4>Watermelon juice with mint and lime-$15/-</h4>
+              
+            </div>
+          </div>
+  
+        <div class="column snacks">
+          <div class="content">
+            <img src="./images/catagory dishes/snacks/1.jpg" style="width:300px;height:200px;">
+            <h4>Fresh Fries- $8</h4>
+          
+          </div>
+        </div>
+        <div class="column snacks">
+          <div class="content">
+          <img src="./images/catagory dishes/snacks/2.jpg" style="width:300px;height:200px;">
+            <h4>Burger - $12</h4>
+            
+          </div>
+        </div>
+        <div class="column snacks">
+          <div class="content">
+          <img src="./images/catagory dishes/snacks/3.jpg" style="width:300px;height:200px;">
+            <h4>Samosa -$8</h4>
+          
+          </div>
+        </div>
+
+  <div class="column vstarters">
+    <div class="content">
+      <img src="./images/catagory dishes/veg/1.jpg" style="width:300px;height:200px;">
+      <h4>Appam with stew - $ 25</h4>
+      
+    </div>
+  </div>
+  <div class="column vstarters">
+    <div class="content">
+    <img src="./images/catagory dishes/veg/2.jpg" style="width:300px;height:200px;">
+      <h4>Chapathi with panner masala - $30</h4>
+        
+    </div>
+  </div>
+  <div class="column vstarters">
+    <div class="content">
+    <img src="./images/catagory dishes/veg/3.jpg" style="width:300px;height:200px;">
+      <h4>Masala dosa- $30</h4>
+       
+    </div>
+  </div>
+  <div class="column nonvstarters">
+    <div class="content">
+    <img src="./images/catagory dishes/nveg/1.jpg" style="width:300px;height:200px;">
+      <h4>Chicken biriyani -$35</h4>
+        
+    </div>
+  </div>
+  <div class="column nonvstarters">
+    <div class="content">
+    <img src="./images/catagory dishes/nveg/2.jpg" style="width:300px;height:200px;">
+      <h4>Fish Fry -$35</h4>
+       
+    </div>
+  </div>
+  <div class="column nonvstarters">
+    <div class="content">
+    <img src="./images/catagory dishes/nveg/3.jpg" style="width:300px;height:200px;">
+      <h4>chicken Fry -$35</h4>
+      
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+<div style="text-align: center;height: 800px; background: linear-gradient(to bottom left, #33ccff 0%, #ff99cc 100%);">
+    <h2>Your cart</h2>
+   <h1>Choose your dishes </h1>
+        
+         <center>
+        
+        <form action="/menu" method="POST">
+          <label for="drinks">Drink</label>
+          <select id="drinks" name="drinks">
+            <option value=""> Select your drink</option>
+            <option value="none">None</option>
+            <option value="orange juice">Orange juice</option>
+            <option value="Lime Juice">Lime Juice</option>
+            <option value="Watermelon juice with mint and lime">Watermelon juice with mint and lime</option>
+              </select>
+              <br>
+              <label for="dqty">Quantity</label>
+              <input type="number" id="dqty" name="dqty">
+              <br>
+              <br>
+              
+              <label for="snacks">Snack</label>
+          <select id="snack" name="snack">
+            <option value="">Select your snack </option>
+            <option value="none">None</option>
+            <option value="Fresh Fries">Fresh Fries</option>
+            <option value="Burger">Burger</option>
+            <option value="Samosa">Samosa</option>
+              </select>
+              <br>
+              <label for="sqty">Quantity</label>
+              <input type="number" id="sqty" name="sqty">
+              <br>
+               <br>
+               
+               
+              <label for="vst">Veg Starters</label>
+          <select id="vegstr" name="vegstr">
+          <option value="">Select your veg starters</option>
+          <option value="none">None</option>
+            <option value="Appam with stew">Appam with stew</option>
+            <option value="Chapathi with panner masala">Chapathi with panner masala</option>
+            <option value="Masala dosa">Masala dosa</option>
+              </select>
+              <br>
+              <label for="vqty">Quantity</label>
+              <input type="number" id="vqty" name="vqty">
+              <br>
+               <br>
+               
+               <label for="nvst">Non Veg Starters</label>
+          <select id="nvegstr" name="nvegstr">
+            <option value="">Select your Non veg starters</option>
+            <option value="none">None</option>
+            <option value="Chicken biriyani">Chicken biriyani</option>
+            <option value="Fish Fry">Fish Fry</option>
+            <option value="chicken Fry">chicken Fry</option>
+              </select>
+              <br>
+              <label for="nvqty">Quantity</label>
+              <input type="number" id="nvqty" name="nvqty">
+              <br>
+               <br>
+               
+          <input id="menusubmit" type="submit" class="orderbutton" value="Add to cart">
+          <br>
+        </form>
+        <br>
+        
+        <button type="submit" class="orderbutton" onclick="window.location.href='order.html'">Order</button>
+  </center>
+ 
+  </div>
+
+
+</div>
+</body>
+</html>

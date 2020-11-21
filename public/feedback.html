@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/feedback.css">
+	<script src="./jquery.min.js"></script>
+	<script src="./script.js"></script>
+	
+</head>
+<body>
+<!-- 	Navigation menu bar -->
+<header>
+	<div class="container">
+	<div class="logo">
+		  <img src="./images/logo.png" alt="logo" width="180" height="100">
+	</div>
+	
+		  <button class="button" onclick="window.location.href='contactus.html'">Contact Us</button>
+		  <button class="button" onclick="window.location.href='login.html'">Login</button>
+		  <button class="button" onclick="window.location.href='signup.html'">Sign Up</button>
+	
+	</div>
+			
+	<div class="menubar">
+			<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="aboutus.html">About Us</a></li>
+				  <li><a href="menu.html">Menu</a></li>
+				  <li><a href="order.html">Order</a></li>
+				  <li><a href="reservation.html">Make a reservation</a></li>
+				  <li><a href="feedback.html">Feedback</a></li>
+		
+			   </ul>
+			
+	</div>
+</header>
+
+
+<div style="background-image: url('./images/back.jpg'); height: 850px; width: 1251px; background-repeat: no-repeat;">
+	<br>
+
+
+<div id="midsignup">
+	  <p style="text-align: center;">HOW DO WE DO??<br>Please pick up a number to rate us...</p>
+	  <form  id="feedbacksubmit" action="/feedback" method="post">
+	  		
+    		<div align="center">
+				<label><b>Service</b></label>
+				<div class="checkboxes">
+
+				  <label><input type="checkbox" id="service" name="service" /> <span>1</span></label>
+				  <label><input type="checkbox" id="service" name="service" /> <span>2</span></label>
+				  <label><input type="checkbox" id="service" name="service" /> <span>3</span></label>
+				  <label><input type="checkbox" id="service" name="service" /> <span>4</span></label>
+				  <label><input type="checkbox" id="service" name="service" /> <span>5</span></label>
+				</div>
+				</br>
+				<label><b>Food</b></label>
+				 <div class="checkboxes">
+
+			  <label><input type="checkbox" id="food" name="food"/> <span>1</span></label>
+			  <label><input type="checkbox" id="food" name="food" /> <span>2</span></label>
+			  <label><input type="checkbox" id="food" name="food" /> <span>3</span></label>
+			  <label><input type="checkbox" id="food" name="food" /> <span>4</span></label>
+			  <label><input type="checkbox" id="food" name="food" /> <span>5</span></label>
+			 </div>
+				</br>
+				<label><b>Cleaniness</b></label>
+				 <div class="checkboxes">
+
+			  <label><input type="checkbox" id="clean" name="clean" /> <span>1</span></label>
+			  <label><input type="checkbox" id="clean" name="clean" /> <span>2</span></label>
+			  <label><input type="checkbox" id="clean" name="clean" /> <span>3</span></label>
+			  <label><input type="checkbox" id="clean" name="clean"/> <span>4</span></label>
+			  <label><input type="checkbox" id="clean" name="clean"/> <span>5</span></label>
+			 </div>
+				</br>
+				  </br>
+			      <label for="comments"><b>Comments or Suggestions</b></label>
+			      <textarea name="comments" rows="5" cols="30" id="comments"></textarea>
+			      <br>
+			      <label><b>Name</b></label>
+			      <input type="text" placeholder="Enter Name" id="name" name="name" required>
+			      <br>
+			      <label><b>Email</b></label>
+			        <input type="text" placeholder="Enter email" id="email" name="email" required>
+			      <br><br>			      
+			      <center>
+			      	<button id="feedbacksubmit" class="commentbtn" type="submit" >Submit</button>
+			      </center>
+			      
+
+			      </form>
+  </div>
+
+
+
+
+      		
+</body>
+</html>

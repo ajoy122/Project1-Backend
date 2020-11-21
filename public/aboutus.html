@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/about.css">
+
+</head>
+<body>
+<!-- 	Navigation menu bar -->
+<header>
+	<div class="container">
+	<div class="logo">
+		  <img src="./images/logo.png" alt="logo" width="180" height="100">
+	</div>
+	
+		  <button class="button" onclick="window.location.href='contactus.html'">Contact Us</button>
+		  <button class="button" onclick="window.location.href='login.html'">Login</button>
+		  <button class="button" onclick="window.location.href='signup.html'">Sign Up</button>
+	
+	</div>
+			
+	<div class="menubar">
+			<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="aboutus.html">About Us</a></li>
+				  <li><a href="menu.html">Menu</a></li>
+				  <li><a href="order.html">Order</a></li>
+				  <li><a href="reservation.html">Make a reservation</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+		
+			   </ul>
+			
+	</div>
+</header>
+
+<!-- Navigation menu bar -->
+<div id="example1" style="text-align: center;">
+
+  	<h1>About Us </h1>
+</div>
+<!-- scroll -->
+<div class="imgscroll">
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="./images/about1.jpg" style="width:700px;height: 500px;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="./images/about2.jpg" style="width:700px;height: 500px;">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="./images/about3.jpg" style="width:700px;height: 500px;">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="./images/about4.jpg" style="width:700px;height: 500px;">
+  <div class="text"></div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+</div>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<!-- scroll -->
+<div class="aboutsection">
+	<p>Taste of kerala is one of the top restaturant in Thunderbay,serving up an extensive menu of authentic south Indian cuisine for anyone and everyone to enjoy.</p>
+	<p>Using only the freshest of ingredients personally picked out,and preparing tasty dishes with authentic recipies.</p>
+	<p>You are sure to love <strong>Taste of Kerala's </strong> amazing food at reasonable prices.</p>
+	<p>Come and enjoy your favourite south Indian dishes and more. No matter what time of day, or where you want to eat, Tate of Kerala packs the south Indian flavour! </p>
+</div>
+
+
+
+</body>
+</html>

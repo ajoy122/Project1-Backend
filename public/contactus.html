@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contactus</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="./CSS/style.css">
+	<link rel="stylesheet" type="text/css" href="./CSS/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="./jquery.min.js"></script>
+	<script src="./script.js"></script>
+</head>
+
+<body>
+<!-- 	Navigation menu bar -->
+	<div class="container">
+	<div class="logo">
+		  <img src="./images/logo.png" alt="logo" width="180" height="100">
+	</div>
+	
+		  <button class="button" onclick="window.location.href='contactus.html'">Contact Us</button>
+		  <button class="button" onclick="window.location.href='login.html'">Login</button>
+		  <button class="button" onclick="window.location.href='signup.html'">Sign Up</button>
+	
+	</div>
+			
+	<div class="menubar">
+			<ul>
+				  <li><a href="index.html">Home</a></li>
+				  <li><a href="aboutus.html">About Us</a></li>
+				  <li><a href="menu.html">Menu</a></li>
+				  <li><a href="order.html">Order</a></li>
+				  <li><a href="reservation.html">Make a reservation</a></li>
+				  <li><a href="feedback.html">Feedback</a></li>
+		
+			   </ul>
+			
+	</div>
+</header>
+<div style="background-image: url('./images/back.jpg'); height: 720px; width: 1251px; background-repeat: no-repeat;">
+	<br>
+
+<div id="midcontact">
+	<p style="text-align: center;">Please take amount to complete the section below.<br>We look forward from hearing from you</p>
+	  <form id="contactussubmit" action="/contact" method="post">
+	  		
+    		<div align="center">
+			      <label for="name"><b>Name</b></label>
+			        <input type="text" placeholder="Enter the name" name="name" id="name" required>
+			      <br><br>
+
+			      <label for="number"><b>Number</b></label>
+			        <input type="text" placeholder="Enter phone number" name="number" id="number" required>
+			      <br><br>
+			      <label for="email"><b>Email</b></label>
+			        <input type="text" placeholder="Enter email" name="email" id="email" required>
+			      <br><br>
+			      <label for="message"><b>Message</b></label>
+			      <textarea id="message" name="message" rows="5" cols="30"></textarea>
+			      <br><br>			      <center>
+					  <button class="sendbutton" type="submit"  onclick="msg()">SEND</button>
+					  <script type="text/javascript">
+						function msg() {
+							alert("Thank you for your response..");
+							
+				  }
+					  </script>
+					  <input id="contactussubmit" class="sendbutton" value="Submit" type="submit">
+			      </center>
+			      
+			  
+			      
+
+      		</div>
+    </form>
+
+</div>
+
+<!-- footer -->
+<div class="footer1">
+	<h2 >Follow us on</h2>
+	<a href="#" class="fa fa-facebook"></a>
+	<a href="#" class="fa fa-instagram"></a>
+</div>
+<div class="footer2" style="background-color: grey;">
+	
+</div>
+<!-- footer -->
+
+</body>
+</html>
